@@ -2,11 +2,10 @@ body{
     background-color: bisque;
 
 }
-body >*{
-    background-color: aqua;
-    
-    border: 2px dashed red;
-}
+:root {
+    --heading-color: rgb(201, 201, 201);
+  }
+  
 
 #whole > * {
   
@@ -66,7 +65,8 @@ article.landing_form{
     text-align: center;
 }
 .landing_form legend{
-   
+   color:var(--heading-color);
+   font-size: 1.7em;
 }
 article.landing_form input{
     width: 20rem;
