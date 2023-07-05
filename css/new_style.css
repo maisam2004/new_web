@@ -61,10 +61,26 @@ div.laptop{
 
 
 article.landing_form{
-    width:40%;
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
 }
 .landing_form legend{
+   
+}
+article.landing_form input{
+    width: 20rem;
+    height: 3em;
+    border-top-left-radius: 1.4em;
+    border-bottom-left-radius: 1.4em;
+    border-top-right-radius: 1.4em;
+    border-bottom-right-radius: 1.4em;
 
+    margin-top: 0.4em;
+    
+}
+article.landing_form input[type="submit"]{
+    background-color: aqua;
 }
 
 
@@ -120,10 +136,7 @@ section.second{
     margin: 0.4em;
 }
 
-.note1{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .icon_notes > *{
     display: flex;
     flex-wrap: wrap;
