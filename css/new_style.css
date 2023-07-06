@@ -278,7 +278,33 @@ section.halfhalf{
 /* gallery £££££ £££££££ £££££££ £££££££££££*/
 section.gallery{
     grid-row:5/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+.gallery h2{
+    color:rgb(198, 196, 196);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.4em;
+
+}
+
+  .gallery article {
+    width: 72%;
+    columns: 3;
+    }
+    .gallery section {
+    margin-bottom: 15px;
+    }
+    .images img{
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px #5a5a5a;
+    }
+
+
+
 /* notes 55555555 55555555555 555555555555*/
 section.notes{
     grid-row:6/7;
