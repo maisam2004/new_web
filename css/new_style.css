@@ -1,9 +1,11 @@
 body{
     background-color: bisque;
+    box-sizing:border-box;
 
 }
 :root {
-    --heading-color: rgb(201, 201, 201);
+    --heading-color: rgb(225, 226, 236);
+    --body-text: rgb(236, 232, 232);
   }
   
 
@@ -24,6 +26,8 @@ section.landing{
     grid-row: 1/2;
     
     background: url(/images/bg_lan_1.jpg);
+
+    
   
     
 
@@ -66,7 +70,10 @@ article.landing_form{
 }
 .landing_form legend{
    color:var(--heading-color);
-   font-size: 1.7em;
+   font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.4em;
 }
 article.landing_form input{
     width: 20rem;
@@ -90,7 +97,11 @@ section.second{
     grid-row:2/3;
     background-color: rgb(63, 65, 91);
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
+    
+    color:var(--body-text);
+
+    padding:2em;
     
 }
 
@@ -98,6 +109,9 @@ section.second{
    text-align: center;
    padding-top: 2%;
    padding-bottom: 2%;
+
+   font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
 
 }
 
@@ -111,6 +125,12 @@ section.second{
     
     
 
+}
+.note1 p,.note2 p,.note3 p,.note4 p{
+    max-width: 22em;
+    margin-left: 3.6em;
+    margin-top: -1em;
+    
 }
 
 .note3,.note4{
@@ -140,8 +160,10 @@ section.second{
 .icon_notes > *{
     display: flex;
     flex-wrap: wrap;
-}
 
+    padding: 0.2em;
+    margin: 0.5em;
+}
 
 
 
@@ -150,7 +172,10 @@ section.second{
 /* ideas part  &&&&&&&& &&&&&&& &&&&&&& */
 section.ideas{
     grid-row:3/4;
+    
 }
+
+
 
 
 /* halfhalf -------------------------------------- */
