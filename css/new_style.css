@@ -198,8 +198,8 @@ section.ideas > *{
     margin: 1em;
 }
 .circle_img{
-    width:10em;
-    height: 10em;
+    width:9em;
+    height: 9em;
     background-color: aqua;
     border-radius: 50%;
 }
@@ -232,7 +232,25 @@ section.ideas > *{
 section.halfhalf{
     grid-row:4/5;
     background-color: rgb(63, 65, 91);
+    display: flex;
 }
+
+.pic_half{
+    border: 1px solid red;
+    width: 40%;
+    height: 100%;
+    background-color: blueviolet;
+}
+.other_half{
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+
+}
+
+
+
+
 /* gallery £££££ £££££££ £££££££ £££££££££££*/
 section.gallery{
     grid-row:5/6;
