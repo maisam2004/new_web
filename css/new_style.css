@@ -6,6 +6,7 @@ body{
 :root {
     --heading-color: rgb(225, 226, 236);
     --body-text: rgb(236, 232, 232);
+    --ideas-color:white;
   }
   
 
@@ -172,11 +173,60 @@ section.second{
 /* ideas part  &&&&&&&& &&&&&&& &&&&&&& */
 section.ideas{
     grid-row:3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
+    color:var(--ideas-color);
+    background-color: rgb(31, 33, 50);
+    
+}
+section.ideas > *{
+    padding: 2em;
+    font-family: 'Poppins', sans-serif;
 }
 
 
+.idea1,.idea2{
+    display: flex;
+    align-items: center;
+    width: 35em;
+}
+.ideas p{
+    width:23em;
+    margin: 1em;
+}
+.circle_img{
+    width:10em;
+    height: 10em;
+    background-color: aqua;
+    border-radius: 50%;
+}
 
+.idea3{
+    width: 31em;
+    align-content: center;
+    
+
+}
+
+.idea3 h4{
+    margin-bottom: -0.2em;
+    
+    
+}
+
+.idea3 ul{
+    display: inline;
+    float: left;
+    margin-right: 1em;
+}
+.idea3 .circle_img{
+    display: inline;
+    float: right;
+    margin-top: -0.6em;
+}
 
 /* halfhalf -------------------------------------- */
 section.halfhalf{
