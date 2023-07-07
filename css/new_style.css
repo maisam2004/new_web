@@ -292,21 +292,62 @@ section.gallery{
     font-size: 2.4em;
 
 }
-
+/* 
   .gallery article {
     padding: 1em;
     width: 72%;
     columns: 3;
     }
-    .gallery section {
-    margin-bottom: 15px;
-    }
+    
     .images img{
     width: 100%;
     box-shadow: 0px 0px 5px 0px #454343;
     }
+ */
+/*second gallery */
+section.gall2{
+   padding: 2em;
+    
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,250px);
+    gap: 1em;
 
-
+}
+.gall2 section{
+    border: 1px dashed rgb(18, 14, 6);
+ 
+ }
+ .gall2 .mason1,.mason3{
+     grid-row:1/2;
+     background-image: url(http://nicesnippets.com/demo/images2m.jpg);
+     background-position: center;
+     background-size: contain;
+ 
+     
+ }
+ .gall2 .mason2{
+     grid-row:1/3;
+     background-image: url(http://nicesnippets.com/demo/images1m.jpg);
+     background-size: cover;
+     background-position: center;
+     
+ }
+ .gall2 .mason4,.mason6{
+     grid-row:2/4;
+     background-image: url(http://nicesnippets.com/demo/images3m.jpg);
+     background-position: center;
+     background-size: cover;
+ 
+     
+ }
+ .gall2 .mason5{
+     grid-row:3/4;
+     background-image: url(http://nicesnippets.com/demo/images4m.jpg);
+     background-position: center;
+     background-size: cover;
+ }
+ 
 
 /* notes 55555555 55555555555 555555555555*/
 section.notes{
@@ -316,53 +357,12 @@ section.notes{
     display: grid;
     grid-template-columns: repeat(3,300px);
     grid-template-rows: repeat(3,250px);
-    gap: 1em;
+    gap: 0.8em;
 
     justify-content: center;
-    padding: 3em;
-}
-.notes h2{
-    position: absolute;
-    left:46%;
-    z-index: 1;
-    font-family: 'Roboto Slab', serif;
-    font-size: 2.1em;
-    color:var(--heading-color)
-
-}
-
-.notes section{
-   border: 1px dashed rgb(18, 14, 6);
-
-}
-.notes .mason1,.mason3{
-    grid-row:1/2;
-    background-image: url(http://nicesnippets.com/demo/images6m.jpg);
-    background-position: center;
-
-    margin-top: 2em;
-}
-.notes .mason2{
-    grid-row:1/3;
-    background-image: url(http://nicesnippets.com/demo/images1m.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-top: 2em;
-}
-.notes .mason4,.mason6{
-    grid-row:2/4;
-    background-image: url(http://nicesnippets.com/demo/images3m.jpg);
-    background-position: center;
-    background-size: cover;
-
     
 }
-.notes .mason5{
-    grid-row:3/4;
-    background-image: url(http://nicesnippets.com/demo/images4m.jpg);
-    background-position: center;
-    background-size: cover;
-}
+
 
 /* two photo =================== */
 section.two_photo{
