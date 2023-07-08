@@ -474,6 +474,10 @@ section.two_photo > *{
 }
 .first_foot_img,.second_foot_img{
     text-align: center;
+    color:rgb(198, 196, 196);
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+
 }
 
 
