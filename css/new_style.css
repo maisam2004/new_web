@@ -463,10 +463,18 @@ li .bul3{
 /* two photo =================== */
 section.two_photo{
     grid-row:7/8;
+    display: flex;
+    gap:4em;
+    justify-content: center;
 
 }
-
-
+section.two_photo > *{
+    border: 2px solid white;
+    width: 30%;
+}
+.first_foot_img,.second_foot_img{
+    text-align: center;
+}
 
 
 
