@@ -488,4 +488,27 @@ section.two_photo > *{
 section.footer{
     grid-row:8/9;
     background-color: rgb(63, 65, 91);
+    display: flex;
+    justify-content: center;
+
+    color:white;
+    font-family: 'Roboto Slab', serif;
+
+
+}
+.footer_links{
+    text-align: center;
+}
+.footer_links ul{
+    display:inline-flex;
+    list-style-type: none;
+    margin-left: -0.9em;;
+    
+}
+.footer_links ul li{
+    padding: 0.3em;
+    border:0.2em solid whitesmoke;
+    border-radius: 50%;
+    
+    margin: 0.1em;
 }
