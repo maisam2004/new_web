@@ -12,8 +12,7 @@ body{
 
 #whole > * {
   
-    border: 2px dashed red;
-
+   
 }
 
 #whole{
@@ -147,6 +146,7 @@ section.second{
 
 
 .icon_notes .small_img{
+    background-image:url(/images/mason2.jpg);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -198,6 +198,8 @@ section.ideas > *{
     width:9em;
     height: 9em;
     background-color: aqua;
+    background-image: url(/images/mason4.jpg);
+    background-position: center;
     border-radius: 50%;
 }
 
@@ -235,7 +237,7 @@ section.halfhalf{
 }
 
 .pic_half{
-    border: 1px solid red;
+    
     width: 40%;
     height: 100%;
     background-color: blueviolet;
@@ -246,7 +248,7 @@ section.halfhalf{
 .other_half{
     width: 60%;
     height: 100%;
-    background-color: rgb(73, 73, 85);
+    background-color: rgba(168, 168, 168, 0.247);
 
     
     font-family: 'Roboto Slab', serif;
