@@ -519,22 +519,5 @@ section.footer{
     
     margin: 0.1em;
 }
-@media (max-width: 768px) {
-    section.landing {
-      height: auto;
-      padding: 2em;
-    }
-    .back {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .laptop {
-      width: 100%;
-      margin-bottom: 2em;
-    }
-    .landing_form {
-      width: 100%;
-      margin: 0;
-    }
-  }
+
   
