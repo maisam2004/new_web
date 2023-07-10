@@ -87,30 +87,8 @@ article.landing_form input{
 article.landing_form input[type="submit"]{
     background-color: aqua;
 }
-@media (max-width:608px){
-    div.back{
-        flex-direction: column;
-        align-items: center;
-
-
-    }
-    div.laptop{
-        
-    }
-    section.landing{
-        padding: 2em;
-        height: auto;
-
-        grid-row: 1/2;
-        width:100%;
-
-        
-    }
 
     /* -----> second*/
-    
-    
-}
 
 /* seconde part ----------------------------------*/
 
@@ -188,6 +166,7 @@ section.second{
 }
 
 
+  
 
 
 
