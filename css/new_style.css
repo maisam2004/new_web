@@ -1,9 +1,10 @@
-body{
-    
-    box-sizing:border-box;
+body {
+
+    box-sizing: border-box;
 
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -14,74 +15,75 @@ body{
 :root {
     --heading-color: rgb(225, 226, 236);
     --body-text: rgb(236, 232, 232);
-    --ideas-color:white;
-  }
-  
-
-#whole > * {
-  width: 100%;
- 
+    --ideas-color: white;
 }
 
-#whole{
+
+#whole>* {
+    width: 100%;
+
+}
+
+#whole {
     display: grid;
-    grid-template-rows:repeat(8,max-content);
+    grid-template-rows: repeat(8, max-content);
     background-color: rgb(39, 41, 58);
 }
 
 /* landing part */
-section.landing{
+section.landing {
     grid-row: 1/2;
-    width:100%;
-    
-    background: url(/images/bg_lan_1.jpg); 
-    
-height: 600px;
+    width: 100%;
+
+    background: url(/images/bg_lan_1.jpg);
+
+    height: 600px;
 
 }
-div.back{
- 
+
+div.back {
+
     display: flex;
     flex-flow: row wrap;
-    
+
     align-items: center;
 
-    width:100%;
+    width: 100%;
     height: 100%;
     /* border: 1px solid white; */
 }
 
-.back img{
+.back img {}
 
-}
-
-div.laptop{
+div.laptop {
     /* border:1px solid whitesmoke; */
 
     background: url(/images/lan_lap.png);
-    
-    background-repeat:no-repeat;
+
+    background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
-   
-    width :48%;
+    background-size: contain;
+
+    width: 48%;
     height: 18em;
 }
 
 
-article.landing_form{
-    width:50%;
+article.landing_form {
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
-.landing_form legend{
-   color:var(--heading-color);
-   font-family: 'Roboto', sans-serif;
+
+.landing_form legend {
+    color: var(--heading-color);
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 0.4em;
 }
-article.landing_form input{
+
+article.landing_form input {
     width: 20rem;
     height: 3em;
     border-top-left-radius: 1.4em;
@@ -90,73 +92,85 @@ article.landing_form input{
     border-bottom-right-radius: 1.4em;
 
     margin-top: 0.4em;
-    
+
 }
-article.landing_form input[type="submit"]{
+
+article.landing_form input[type="submit"] {
     background-color: aqua;
 }
 
-    /* -----> second*/
+/* -----> second*/
 
 /* seconde part ----------------------------------*/
 
-section.second{
-    grid-row:2/3;
+section.second {
+    grid-row: 2/3;
     background-color: rgb(63, 65, 91);
     margin: 0 auto;
     max-width: 100%;
-    
-    color:var(--body-text);
 
-    padding:2em;
-    
+    color: var(--body-text);
+
+    padding: 2em;
+
 }
 
-.header{
-   text-align: center;
-   padding-top: 2%;
-   padding-bottom: 2%;
+.header {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
-   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.6em;
 
 }
 
-.icon_notes{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 2,4em;
+.icon_notes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2, 4em;
 }
-.note1,.note2{
+
+.note1,
+.note2 {
     grid-column: 1/2;
-    
-    
+
+
 
 }
-.note1 p,.note2 p,.note3 p,.note4 p{
+
+.note1 p,
+.note2 p,
+.note3 p,
+.note4 p {
     max-width: 22em;
     margin-left: 3.6em;
     margin-top: -1em;
-    
+
 }
 
-.note3,.note4{
+.note3,
+.note4 {
     grid-column: 2/3;
-    
-}
-.note5,.note6{
-    grid-column: 3/4;
-    
+
 }
 
-.note1,.note3,.note5{
+.note5,
+.note6 {
+    grid-column: 3/4;
+
+}
+
+.note1,
+.note3,
+.note5 {
     grid-row: 1/2;
 }
 
 
 
-.icon_notes .small_img{
-    background-image:url(/images/mason2.jpg);
+.icon_notes .small_img {
+    background-image: url(/images/mason2.jpg);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -165,7 +179,7 @@ section.second{
 }
 
 
-.icon_notes > *{
+.icon_notes>* {
     display: flex;
     flex-wrap: wrap;
 
@@ -174,39 +188,43 @@ section.second{
 }
 
 
-  
+
 
 
 
 /* ideas part  &&&&&&&& &&&&&&& &&&&&&& */
-section.ideas{
-    grid-row:3/4;
+section.ideas {
+    grid-row: 3/4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    color:var(--ideas-color);
+
+    color: var(--ideas-color);
     background-color: rgb(31, 33, 50);
-    
+
 }
-section.ideas > *{
+
+section.ideas>* {
     padding: 2em;
     font-family: 'Poppins', sans-serif;
 }
 
 
-.idea1,.idea2{
+.idea1,
+.idea2 {
     display: flex;
     align-items: center;
     width: 35em;
 }
-.ideas p{
-    width:23em;
+
+.ideas p {
+    width: 23em;
     margin: 1em;
 }
-.circle_img{
-    width:9em;
+
+.circle_img {
+    width: 9em;
     height: 9em;
     background-color: aqua;
     background-image: url(/images/mason4.jpg);
@@ -214,41 +232,42 @@ section.ideas > *{
     border-radius: 50%;
 }
 
-.idea3{
+.idea3 {
     width: 31em;
     align-content: center;
-    
+
 
 }
 
-.idea3 h4{
+.idea3 h4 {
     margin-bottom: -0.2em;
-    
-    
+
+
 }
 
-.idea3 ul{
+.idea3 ul {
     display: inline;
     float: left;
     margin-right: 1em;
 }
-.idea3 .circle_img{
+
+.idea3 .circle_img {
     display: inline;
     float: right;
     margin-top: -0.6em;
 }
 
 /* halfhalf -------------------------------------- */
-section.halfhalf{
-    grid-row:4/5;
+section.halfhalf {
+    grid-row: 4/5;
     background-color: rgb(63, 65, 91);
     display: flex;
 
-    height:26em;
+    height: 26em;
 }
 
-.pic_half{
-    
+.pic_half {
+
     width: 40%;
     height: 100%;
     background-color: blueviolet;
@@ -256,41 +275,44 @@ section.halfhalf{
     background-position: center;
     background-size: cover;
 }
-.other_half{
+
+.other_half {
     width: 60%;
     height: 100%;
     background-color: rgba(168, 168, 168, 0.247);
 
-    
+
     font-family: 'Roboto Slab', serif;
     font-size: 1.4em;
 
-    color:rgb(213, 211, 211);
+    color: rgb(213, 211, 211);
 }
-.cont_other{
+
+.cont_other {
     padding-left: 18%;
     padding-top: 13%;
 }
-.cont_other form input{
-    
-    width:8em;
+
+.cont_other form input {
+
+    width: 8em;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0);
 
     font-weight: 800;
     font-size: 1.2em;
-    color:white;
+    color: white;
     font-family: 'Roboto Slab', serif;
-    border:1px solid whitesmoke;
-    
+    border: 1px solid whitesmoke;
+
 }
 
 
 
 
 /* gallery £££££ £££££££ £££££££ £££££££££££*/
-section.gallery{
-    grid-row:5/6;
+section.gallery {
+    grid-row: 5/6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,12 +321,14 @@ section.gallery{
     background-color: rgb(2, 20, 50);
 
 }
-.gallery h2{
-    color:rgb(198, 196, 196);
+
+.gallery h2 {
+    color: rgb(198, 196, 196);
     font-family: 'Roboto Slab', serif;
     font-size: 2.4em;
 
 }
+
 /* 
   .gallery article {
     padding: 1em;
@@ -318,87 +342,98 @@ section.gallery{
     }
  */
 /*second gallery */
-section.gall2{
-   padding: 2em;
-    
+section.gall2 {
+    padding: 2em;
+
     display: grid;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(3,250px);
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 250px);
     gap: 1em;
 
 }
-.gall2 section{
+
+.gall2 section {
     /* border: 1px dashed rgb(18, 14, 6); */
- 
- }
- .gall2 .mason1,.mason3{
-     grid-row:1/2;
-     background-image: url(http://nicesnippets.com/demo/images1m.jpg);
-     background-position: center;
-     background-size: contain;
- 
-     
- }
- .gall2 .mason2{
-     grid-row:1/3;
-     background-image: url(/images/mason1.jpg);
-     background-size: cover;
-     background-position: center;
-     
- }
- .gall2 .mason4,.mason6{
-     grid-row:2/4;
-     background-image: url(http://nicesnippets.com/demo/images3m.jpg);
-     background-position: center;
-     background-size: cover;
- 
-     
- }
- .gall2 .mason5{
-     grid-row:3/4;
-     background-image: url(http://nicesnippets.com/demo/images4m.jpg);
-     background-position: center;
-     background-size: cover;
- }
- 
+
+}
+
+.gall2 .mason1,
+.mason3 {
+    grid-row: 1/2;
+    background-image: url(http://nicesnippets.com/demo/images1m.jpg);
+    background-position: center;
+    background-size: contain;
+
+
+}
+
+.gall2 .mason2 {
+    grid-row: 1/3;
+    background-image: url(/images/mason1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gall2 .mason4,
+.mason6 {
+    grid-row: 2/4;
+    background-image: url(http://nicesnippets.com/demo/images3m.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.gall2 .mason5 {
+    grid-row: 3/4;
+    background-image: url(http://nicesnippets.com/demo/images4m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 
 /* notes 55555555 55555555555 555555555555*/
-section.notes{
-    
-    grid-row:6/7;
-    background-color: rgb(63, 65, 91);
-   display: flex;
+section.notes {
 
-   color:rgb(198, 196, 196);
+    grid-row: 6/7;
+    background-color: rgb(63, 65, 91);
+    display: flex;
+
+    color: rgb(198, 196, 196);
     font-family: 'Roboto Slab', serif;
     font-size: 1.2em;
 
-    
+
 }
-.list_notes{
-    
+
+.list_notes {
+
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns:repeat(6,1fr) ;
-    gap:1em;
-    
-    
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+
+
 }
-.list_notes ul{
+
+.list_notes ul {
     /* list-style-image: url(/images/circle_icon.png);
      */
-     list-style-type: none;
+    list-style-type: none;
     grid-column: 2/7;
     position: relative;
 
 }
-.list_notes li{
+
+.list_notes li {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 0.9em;
 }
-li .bul{
+
+li .bul {
     background-color: rgb(241, 243, 238);
     width: 28px;
     height: 28px;
@@ -407,12 +442,13 @@ li .bul{
     margin-right: 5px;
     position: absolute;
 
-    top:11%;
-    left:1em;
-    
-    
+    top: 11%;
+    left: 1em;
+
+
 }
-li .bul2{
+
+li .bul2 {
     background-color: rgb(238, 240, 232);
     width: 28px;
     height: 28px;
@@ -421,12 +457,13 @@ li .bul2{
     margin-right: 5px;
     position: absolute;
 
-    top:42%;
-    left:1em;
-    
-    
+    top: 42%;
+    left: 1em;
+
+
 }
-li .bul3{
+
+li .bul3 {
     background-color: rgb(249, 250, 248);
     width: 28px;
     height: 28px;
@@ -435,18 +472,19 @@ li .bul3{
     margin-right: 5px;
     position: absolute;
 
-    top:75%;
-    left:1em;
-    
-    
+    top: 75%;
+    left: 1em;
+
+
 }
 
 
-.list_notes li{
+.list_notes li {
 
-   background-size: contain;
+    background-size: contain;
 
 }
+
 /* .list_notes li::before {
     content: '';
     display: inline-block;
@@ -459,14 +497,15 @@ li .bul3{
     
   
   } */
-  .list_notes .notes1{
+.list_notes .notes1 {
     grid-column: 2/4;
     padding: 2em;
-  }
-  .list_notes .notes2{
+}
+
+.list_notes .notes2 {
     grid-column: 4/7;
     padding: 2em;
-  }
+}
 
 
 
@@ -474,28 +513,32 @@ li .bul3{
 
 
 /* two photo =================== */
-section.two_photo{
-    grid-row:7/8;
+section.two_photo {
+    grid-row: 7/8;
     display: flex;
-    gap:2em;
+    gap: 2em;
     justify-content: center;
 
     padding: 2em;
     background-color: rgb(21, 21, 50);
 
 }
-section.two_photo > *{
+
+section.two_photo>* {
     border: 2px solid white;
     width: 30%;
     background-color: black;
 }
-div.imgs img{
-    
+
+div.imgs img {
+
     width: 95%;
 }
-.first_foot_img,.second_foot_img{
+
+.first_foot_img,
+.second_foot_img {
     text-align: center;
-    color:rgb(198, 196, 196);
+    color: rgb(198, 196, 196);
     font-family: 'Roboto Slab', serif;
     font-size: 1.2em;
 
@@ -503,31 +546,35 @@ div.imgs img{
 
 
 
-section.footer{
-    grid-row:8/9;
+section.footer {
+    grid-row: 8/9;
     background-color: rgb(63, 65, 91);
     display: flex;
     justify-content: center;
 
-    color:white;
+    color: white;
     font-family: 'Roboto Slab', serif;
 
 
 }
-.footer_links{
+
+.footer_links {
     text-align: center;
 }
-.footer_links ul{
-    display:inline-flex;
+
+.footer_links ul {
+    display: inline-flex;
     list-style-type: none;
-    margin-left: -0.9em;;
-    
+    margin-left: -0.9em;
+    ;
+
 }
-.footer_links ul li{
+
+.footer_links ul li {
     padding: 0.3em;
-    border:0.2em solid whitesmoke;
+    border: 0.2em solid whitesmoke;
     border-radius: 50%;
-    
+
     margin: 0.1em;
 }
 
